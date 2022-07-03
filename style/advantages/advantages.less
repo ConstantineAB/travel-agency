@@ -1,0 +1,32 @@
+@orange: #FF5300;
+
+.section__advantages {
+    height: 366px;
+    display: grid;
+    align-items: center;
+        &__container {
+            display: grid;
+            justify-content: space-between;
+            gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-rows: min-content;
+        &__block {
+            margin: 0 auto;
+            width: max-content;
+            display: grid;
+            align-items: center;
+            grid-template-columns: min-content max-content;
+            font-size: 18px;
+            font-weight: 700;
+            &__left {
+                margin-left: 45px;
+                &__title {
+                    color: @orange;
+                }
+                &__text {
+                    
+                }
+            }
+        }
+    }
+}

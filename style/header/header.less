@@ -1,0 +1,74 @@
+@item__color: #8E8D8C;
+@active__color: #1d1b19;
+@active__line__color: #ff5300;;
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px auto;
+    &__top {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        
+        grid-auto-flow: column;
+        &__logo {
+            cursor: pointer;
+        }
+        &__nav {
+            &__container {
+                display: grid;
+                grid-auto-flow: column;
+                grid-column-gap: 60px;
+                &__item {
+                    font-size: 20px;
+                    font-weight: 900;
+                    color: @item__color !important; 
+                }
+            }
+            &__container span {
+
+            }
+        }
+    }
+    &__title {
+        position: relative;
+        display: grid;
+        align-items: center;
+        height: 532px;
+        font-size: 60px;
+        font-weight: 900;
+        background-image: url(/img/background-images/vacation-pool.jpg);
+        background-repeat: no-repeat;
+        background-position: right, center;
+        background-size: 800px;
+        &__contant {
+
+        }
+        &__button {
+
+        }
+        &__button img {
+
+        }
+        &__orange__line {
+            position: absolute;
+            right: 1px;
+            bottom: 0;
+            width: 480px;
+            height: 10px;
+            z-index: 10;
+        }
+    }
+}
+
+.active {
+    color: #1d1b19 !important;
+}
+.active__line {
+    margin: 0 auto;
+    margin-top: 4px;
+    width: 40px;
+    height: 2px;
+    background-color: @active__line__color;
+}

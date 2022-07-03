@@ -1,0 +1,176 @@
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  color: #000 !important;
+  text-decoration: none;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1360px;
+}
+.__container {
+  margin: 0px 15px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px auto;
+}
+.header__top {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-auto-flow: column;
+}
+.header__top__logo {
+  cursor: pointer;
+}
+.header__top__nav__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 60px;
+}
+.header__top__nav__container__item {
+  font-size: 20px;
+  font-weight: 900;
+  color: #8E8D8C !important;
+}
+.header__title {
+  position: relative;
+  display: grid;
+  align-items: center;
+  height: 532px;
+  font-size: 60px;
+  font-weight: 900;
+  background-image: url(/img/background-images/vacation-pool.jpg);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  background-size: 800px;
+}
+.header__title__orange__line {
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  width: 480px;
+  height: 10px;
+  z-index: 10;
+}
+.active {
+  color: #1d1b19 !important;
+}
+.active__line {
+  margin: 0 auto;
+  margin-top: 4px;
+  width: 40px;
+  height: 2px;
+  background-color: #ff5300;
+}
+.section__advantages {
+  height: 366px;
+  display: grid;
+  align-items: center;
+}
+.section__advantages__container {
+  display: grid;
+  justify-content: space-between;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-rows: min-content;
+}
+.section__advantages__container__block {
+  margin: 0 auto;
+  width: max-content;
+  display: grid;
+  align-items: center;
+  grid-template-columns: min-content max-content;
+  font-size: 18px;
+  font-weight: 700;
+}
+.section__advantages__container__block__left {
+  margin-left: 45px;
+}
+.section__advantages__container__block__left__title {
+  color: #FF5300;
+}
+.section__slider {
+  margin-bottom: 115px;
+}
+.section__slider__container {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  grid-template-rows: min-content;
+}
+.section__slider__container__left__title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.section__slider__container__left__subtitle {
+  font-size: 20px;
+  font-weight: 800;
+  color: gray;
+  margin-bottom: 35px;
+}
+.section__slider__container__left__button {
+  width: 170px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #FF5300;
+}
+.section__slider__container__right {
+  width: max-content;
+  position: relative;
+}
+.section__slider__container__right__button {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  width: 50px;
+  height: 50px;
+  background-color: #FF5300;
+  position: absolute;
+  top: 0;
+  left: 735px;
+  bottom: 0;
+  border-radius: 50px;
+}
