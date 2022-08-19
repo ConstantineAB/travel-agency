@@ -14,3 +14,59 @@ body {
 @import "header/header.less";
 @import "advantages/advantages.less";
 @import "slider/slider.less";
+@import "experiences/experiences.less";
+@import "destinations/destinations.less";
+@import "best-places/best-places.less";
+@import "latest-trends/latest-trends.less";
+@import "partners/partners.less";
+
+.footer {
+    display: grid;
+    justify-content: space-between;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
+    grid-template-rows: min-content;
+    &__description {
+        &__logo {
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            font-weight: 700;
+            color: #808080;
+        }
+    }
+    &__useful-links {
+        a {
+            font-size: 18px;
+            font-weight: 700;
+            color: #808080;
+        }
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    &__support-links {
+        a {
+            font-size: 18px;
+            font-weight: 700;
+            color: #808080;
+        }
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    &__newsletter {
+        a {
+            font-size: 18px;
+            font-weight: 700;
+            color: #808080;
+        }
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}

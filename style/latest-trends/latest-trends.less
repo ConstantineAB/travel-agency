@@ -1,0 +1,47 @@
+.section__latest-trends {
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, 680px);
+    grid-template-rows: min-content;
+    &__left {
+        margin-bottom: 15px;
+        height: max-content;
+        position: relative;
+        display: grid;
+        grid-template-columns: 210px 220px 210px;
+        align-items: center;
+        &__climber {
+        }
+        &__red-mountain {
+            z-index: 10;
+        }
+        &__tourist {
+        }
+    }
+    &__right {
+        display: grid;
+        justify-content: center;
+        &__title {
+            font-size: 48px;
+            font-weight: 800;
+        }
+        &__subtitle {
+            font-size: 20px;
+            font-weight: 700;
+            color: #808080;
+        }
+        &__button {
+            width: 170px;
+            height: 60px;
+            background-color: #ff5300;
+            color: #fff;
+            p {
+                font-size: 18px;
+                font-weight: 900;
+            }
+        }
+    }
+}

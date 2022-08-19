@@ -1,0 +1,106 @@
+.section__best-places {
+    width: 1331px;
+    display: grid;
+    margin-bottom: 115px;
+    &__title {
+        width: max-content;
+        margin: 0 auto;
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 65px;
+    }
+    &__content {
+        width: 100%;
+        height: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        &__right {
+            position: relative;
+            &__text {
+                position: absolute;
+                bottom: 0;
+                &__title {
+
+                }
+                &__subtitle {
+
+                }
+            }
+        }
+        &__left {
+            position: relative;
+            height: 470px;
+            display: grid;
+            &__sea-img {
+                position: absolute;
+                left: 0;
+                width: min-content;
+                height: min-content;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            &__wooden-img {
+                position: absolute;
+                left: 220px;
+                width: min-content;
+                height: min-content;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            &__girl-img {
+                position: absolute;
+                right: 0;
+                width: min-content;
+                height: min-content;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            &__bridge-img {
+                position: absolute;
+                bottom: 0px;
+                width: min-content;
+                height: min-content;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            &__camping-img {
+                position: absolute;
+                left: 220px;
+                bottom: 0px;
+                width: min-content;
+                height: min-content;
+                img {
+                    border-radius: 10px;
+                }
+            }
+            &__rock-img {
+                display: grid;
+                justify-content: center;
+                align-items: end;
+                position: absolute;
+                right: 0;
+                bottom: 0px;
+                width: min-content;
+                height: min-content;
+                img {
+                    border-radius: 10px;
+                }
+                &__button {
+                    position: absolute;
+                    width: 100%;
+                    height: 60px;
+                    background-color: #ff5300;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #fff;
+                    border-radius: 0px 0px 10px 10px;
+                }
+            }
+        }
+    }
+}

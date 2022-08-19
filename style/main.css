@@ -22,9 +22,10 @@ ul,
 ol,
 li {
   list-style: none;
+  margin-left: -20px;
 }
 a {
-  color: #000 !important;
+  color: #000;
   text-decoration: none;
 }
 button {
@@ -127,15 +128,13 @@ body {
   color: #FF5300;
 }
 .section__slider {
+  margin: 0 auto;
   margin-bottom: 115px;
 }
 .section__slider__container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
-  grid-template-rows: min-content;
 }
 .section__slider__container__left__title {
   font-size: 48px;
@@ -159,9 +158,15 @@ body {
 .section__slider__container__right {
   width: max-content;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section__slider__container__right img {
+  margin: 10px;
 }
 .section__slider__container__right__button {
-  display: grid;
+  display: none;
   justify-content: center;
   align-items: center;
   margin: auto 0;
@@ -173,4 +178,274 @@ body {
   left: 735px;
   bottom: 0;
   border-radius: 50px;
+}
+.section__experiences {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 1060px);
+  grid-template-rows: 110px;
+}
+.section__experiences__title {
+  margin: 0 auto;
+  padding-bottom: 52px;
+  font-size: 48px;
+  font-weight: 900;
+}
+.section__experiences__main {
+  margin-bottom: 74px;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(253px, max-content));
+  grid-template-rows: min-content;
+}
+.section__experiences__main__card img {
+  margin-bottom: 17px;
+}
+.section__experiences__main__card__title {
+  margin-bottom: 17px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.section__experiences__main__card__subtitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffa97e;
+}
+.section__destinations {
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: minmax(150px, auto) minmax(350px, auto);
+}
+.section__destinations__title {
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 900;
+}
+.section__destinations__content {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 317px 317px 317px 317px;
+}
+.section__destinations__content__card {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: 120px 85px;
+}
+.section__best-places {
+  width: 1331px;
+  display: grid;
+  margin-bottom: 115px;
+}
+.section__best-places__title {
+  width: max-content;
+  margin: 0 auto;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 65px;
+}
+.section__best-places__content {
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.section__best-places__content__right {
+  position: relative;
+}
+.section__best-places__content__right__text {
+  position: absolute;
+  bottom: 0;
+}
+.section__best-places__content__left {
+  position: relative;
+  height: 470px;
+  display: grid;
+}
+.section__best-places__content__left__sea-img {
+  position: absolute;
+  left: 0;
+  width: min-content;
+  height: min-content;
+}
+.section__best-places__content__left__sea-img img {
+  border-radius: 10px;
+}
+.section__best-places__content__left__wooden-img {
+  position: absolute;
+  left: 220px;
+  width: min-content;
+  height: min-content;
+}
+.section__best-places__content__left__wooden-img img {
+  border-radius: 10px;
+}
+.section__best-places__content__left__girl-img {
+  position: absolute;
+  right: 0;
+  width: min-content;
+  height: min-content;
+}
+.section__best-places__content__left__girl-img img {
+  border-radius: 10px;
+}
+.section__best-places__content__left__bridge-img {
+  position: absolute;
+  bottom: 0px;
+  width: min-content;
+  height: min-content;
+}
+.section__best-places__content__left__bridge-img img {
+  border-radius: 10px;
+}
+.section__best-places__content__left__camping-img {
+  position: absolute;
+  left: 220px;
+  bottom: 0px;
+  width: min-content;
+  height: min-content;
+}
+.section__best-places__content__left__camping-img img {
+  border-radius: 10px;
+}
+.section__best-places__content__left__rock-img {
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: min-content;
+  height: min-content;
+}
+.section__best-places__content__left__rock-img img {
+  border-radius: 10px;
+}
+.section__best-places__content__left__rock-img__button {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #ff5300;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0px 0px 10px 10px;
+}
+.section__latest-trends {
+  width: 100%;
+  margin-bottom: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, 680px);
+  grid-template-rows: min-content;
+}
+.section__latest-trends__left {
+  margin-bottom: 15px;
+  height: max-content;
+  position: relative;
+  display: grid;
+  grid-template-columns: 210px 220px 210px;
+  align-items: center;
+}
+.section__latest-trends__left__red-mountain {
+  z-index: 10;
+}
+.section__latest-trends__right {
+  display: grid;
+  justify-content: center;
+}
+.section__latest-trends__right__title {
+  font-size: 48px;
+  font-weight: 800;
+}
+.section__latest-trends__right__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #808080;
+}
+.section__latest-trends__right__button {
+  width: 170px;
+  height: 60px;
+  background-color: #ff5300;
+  color: #fff;
+}
+.section__latest-trends__right__button p {
+  font-size: 18px;
+  font-weight: 900;
+}
+.section__partners {
+  display: grid;
+}
+.section__partners__title {
+  margin: 0 auto;
+  padding-bottom: 100px;
+  font-size: 48px;
+  font-weight: 900;
+}
+.section__partners__content {
+  padding-bottom: 150px;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  grid-template-rows: min-content;
+}
+.section__partners__content__person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__partners__content__person__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer {
+  display: grid;
+  justify-content: space-between;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
+  grid-template-rows: min-content;
+}
+.footer__description__logo {
+  margin-bottom: 20px;
+}
+.footer__description__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #808080;
+}
+.footer__useful-links a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #808080;
+}
+.footer__useful-links__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer__support-links a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #808080;
+}
+.footer__support-links__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer__newsletter a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #808080;
+}
+.footer__newsletter__title {
+  font-size: 24px;
+  font-weight: 700;
 }
