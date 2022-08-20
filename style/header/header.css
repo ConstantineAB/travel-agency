@@ -1,0 +1,62 @@
+.header {
+  min-height: 130px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px auto;
+}
+.header__top {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+}
+.header__top__logo {
+  cursor: pointer;
+}
+.header__top__nav__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header__top__nav__container span {
+  margin: 15px;
+}
+.header__top__nav__container__item {
+  font-size: 20px;
+  font-weight: 900;
+  color: #8E8D8C !important;
+}
+.header__title {
+  position: relative;
+  display: grid;
+  align-items: center;
+  height: 532px;
+  font-size: 60px;
+  font-weight: 900;
+  background-image: url(/img/vacation-pool.jpg);
+  background-repeat: no-repeat;
+  background-position: right, center;
+  background-size: 800px;
+}
+.header__title__orange__line {
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  width: 480px;
+  height: 10px;
+  z-index: 10;
+}
+.active {
+  color: #1d1b19 !important;
+}
+.active__line {
+  margin: 0 auto;
+  margin-top: 4px;
+  width: 40px;
+  height: 2px;
+  background-color: #ff5300;
+}
+@media (max-width: 525px) {
+  .header__top__nav__container__item {
+    font-size: 14px;
+  }
+}
