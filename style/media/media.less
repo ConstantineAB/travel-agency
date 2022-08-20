@@ -1,0 +1,109 @@
+@media(max-width: 1330px) {
+    .section__latest-trends {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1024px) {
+    .header__title {
+        background-position: center;
+    }
+    .header__title__contant {
+        margin: 0 auto;
+        padding-bottom: 310px;
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 768px) {
+    .header__title__contant {
+        font-size: 30px;
+    }
+    .section__destinations__title {
+        margin-top: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .section__best-places__title {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .section__latest-trends {
+        &__left {
+            grid-template-columns: 110px 110px 110px;
+            &__climber img {
+                width: 130px;
+            }
+            &__red-mountain img {
+                width: 160px;
+                z-index: 10;
+            }
+            &__tourist img {
+                width: 130px;
+            }
+        }
+    }
+    .section__best-places__content__right img {
+        width: 320px;
+    }
+    .section__best-places__content {
+        margin: 0 auto;
+        flex-direction: column;
+        &__left {
+            margin: 0 auto;
+            width: 320px;
+            height: 200px;
+            &__sea-img {
+                img {
+                    width: 100px;
+                    height: 140px;
+                }
+            }
+            &__wooden-img {
+                left: 110px;
+                img {
+                    width: 100px;
+                }
+            }
+            &__girl-img {
+                left: 220px;
+                img {
+                    height: 75px;
+                    width: 100px;
+                }
+            }
+            &__bridge-img {
+                img {
+                    height: 50px;
+                    width: 100px;
+                }
+            }
+            &__camping-img {
+                width: min-content;
+                height: min-content;
+                left: 110px;
+                img {
+                    width: 100px;
+                    height: 89px;
+                }
+            }
+            &__rock-img {
+                left: 220px;
+                img {
+                    height: 118px;
+                    width: 100px;
+                }
+                &__button {
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .header__title__contant {
+        font-size: 20px;
+    }
+}

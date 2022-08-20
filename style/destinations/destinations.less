@@ -9,10 +9,13 @@
         font-weight: 900;
     }
     &__content { 
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        grid-template-columns: 317px 317px 317px 317px;
         &__card {
+            margin-bottom: 30px;
+            width: 317px;
+            height: max-content;
             display: grid;
             justify-content: space-evenly;
             align-items: center;

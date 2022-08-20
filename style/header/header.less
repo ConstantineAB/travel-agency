@@ -3,31 +3,30 @@
 @active__line__color: #ff5300;;
 
 .header {
+    min-height: 130px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 130px auto;
     &__top {
         display: grid;
-        justify-content: space-between;
         align-items: center;
-        
         grid-auto-flow: column;
         &__logo {
             cursor: pointer;
         }
         &__nav {
             &__container {
-                display: grid;
-                grid-auto-flow: column;
-                grid-column-gap: 60px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                span {
+                    margin: 15px;
+                }
                 &__item {
                     font-size: 20px;
                     font-weight: 900;
                     color: @item__color !important; 
                 }
-            }
-            &__container span {
-
             }
         }
     }
@@ -71,4 +70,10 @@
     width: 40px;
     height: 2px;
     background-color: @active__line__color;
+}
+
+@media(max-width: 525px) {
+    .header__top__nav__container__item {
+        font-size: 14px;
+    }
 }

@@ -1,0 +1,40 @@
+.section__experiences {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section__experiences__title {
+  margin: 0 auto;
+  padding: 15px;
+  padding-bottom: 52px;
+  font-size: 48px;
+  font-weight: 900;
+}
+.section__experiences__main {
+  margin-bottom: 74px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.section__experiences__main__card {
+  margin: 0 auto;
+  padding: 10px;
+}
+.section__experiences__main__card img {
+  margin-bottom: 17px;
+}
+.section__experiences__main__card__title {
+  width: 254px;
+  min-height: 80px;
+  margin-bottom: 17px;
+  font-size: 18px;
+  font-weight: 900;
+}
+.section__experiences__main__card__subtitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffa97e;
+}

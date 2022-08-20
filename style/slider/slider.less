@@ -9,6 +9,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         &__left {
+            margin: 15px;
             &__title {
                 font-size: 48px;
                 font-weight: 800;
@@ -30,12 +31,13 @@
             }
         }
         &__right {
+            margin: 15px;
             padding-right: 25px;
-            width: max-content;
             position: relative;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
             img {
                 margin: 10px;
             }
@@ -54,5 +56,11 @@
                 border-radius: 50px;
             }
         }
+    }
+}
+
+@media(max-width: 1330px) {
+    .section__slider__container {
+        justify-content: center;
     }
 }

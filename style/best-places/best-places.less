@@ -1,8 +1,10 @@
 .section__best-places {
-    width: 1331px;
-    display: grid;
+    max-width: 1330px;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 115px;
     &__title {
+        word-wrap: normal;
         width: max-content;
         margin: 0 auto;
         font-size: 48px;
@@ -10,18 +12,18 @@
         margin-bottom: 65px;
     }
     &__content {
-        width: 100%;
-        height: max-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
+        width: 101%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
         &__right {
             position: relative;
+            width: max-content;
             &__text {
                 position: absolute;
                 bottom: 0;
                 &__title {
-
                 }
                 &__subtitle {
 
@@ -30,6 +32,7 @@
         }
         &__left {
             position: relative;
+            width: 658px;
             height: 470px;
             display: grid;
             &__sea-img {

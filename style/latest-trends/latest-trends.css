@@ -1,0 +1,46 @@
+.section__latest-trends {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__latest-trends__left {
+  margin: 15px;
+  padding-bottom: 15px;
+  width: 682px;
+  height: max-content;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 210px 220px 210px;
+  align-items: center;
+}
+.section__latest-trends__left__red-mountain {
+  z-index: 10;
+}
+.section__latest-trends__right {
+  margin: 15px;
+  display: grid;
+  justify-content: center;
+}
+.section__latest-trends__right__title {
+  font-size: 48px;
+  font-weight: 800;
+}
+.section__latest-trends__right__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #808080;
+}
+.section__latest-trends__right__button {
+  width: 170px;
+  height: 60px;
+  background-color: #ff5300;
+  color: #fff;
+}
+.section__latest-trends__right__button p {
+  font-size: 18px;
+  font-weight: 900;
+}

@@ -44,16 +44,17 @@ body {
   max-width: 1360px;
 }
 .__container {
+  max-width: 1330px;
   margin: 0px 15px;
 }
 .header {
+  min-height: 130px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 130px auto;
 }
 .header__top {
   display: grid;
-  justify-content: space-between;
   align-items: center;
   grid-auto-flow: column;
 }
@@ -61,9 +62,12 @@ body {
   cursor: pointer;
 }
 .header__top__nav__container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header__top__nav__container span {
+  margin: 15px;
 }
 .header__top__nav__container__item {
   font-size: 20px;
@@ -99,6 +103,11 @@ body {
   width: 40px;
   height: 2px;
   background-color: #ff5300;
+}
+@media (max-width: 525px) {
+  .header__top__nav__container__item {
+    font-size: 14px;
+  }
 }
 .section__advantages {
   height: 366px;
@@ -136,6 +145,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.section__slider__container__left {
+  margin: 15px;
+}
 .section__slider__container__left__title {
   font-size: 48px;
   font-weight: 800;
@@ -156,11 +168,13 @@ body {
   background-color: #FF5300;
 }
 .section__slider__container__right {
-  width: max-content;
+  margin: 15px;
+  padding-right: 25px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .section__slider__container__right img {
   margin: 10px;
@@ -179,32 +193,41 @@ body {
   bottom: 0;
   border-radius: 50px;
 }
+@media (max-width: 1330px) {
+  .section__slider__container {
+    justify-content: center;
+  }
+}
 .section__experiences {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  grid-template-columns: minmax(auto, 1060px);
-  grid-template-rows: 110px;
 }
 .section__experiences__title {
   margin: 0 auto;
+  padding: 15px;
   padding-bottom: 52px;
   font-size: 48px;
   font-weight: 900;
 }
 .section__experiences__main {
   margin-bottom: 74px;
-  display: grid;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(253px, max-content));
-  grid-template-rows: min-content;
+}
+.section__experiences__main__card {
+  margin: 0 auto;
+  padding: 10px;
 }
 .section__experiences__main__card img {
   margin-bottom: 17px;
 }
 .section__experiences__main__card__title {
+  width: 254px;
+  min-height: 80px;
   margin-bottom: 17px;
   font-size: 18px;
   font-weight: 900;
@@ -227,22 +250,27 @@ body {
   font-weight: 900;
 }
 .section__destinations__content {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: 317px 317px 317px 317px;
 }
 .section__destinations__content__card {
+  margin-bottom: 30px;
+  width: 317px;
+  height: max-content;
   display: grid;
   justify-content: space-evenly;
   align-items: center;
   grid-template-columns: 120px 85px;
 }
 .section__best-places {
-  width: 1331px;
-  display: grid;
+  max-width: 1330px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 115px;
 }
 .section__best-places__title {
+  word-wrap: normal;
   width: max-content;
   margin: 0 auto;
   font-size: 48px;
@@ -250,14 +278,15 @@ body {
   margin-bottom: 65px;
 }
 .section__best-places__content {
-  width: 100%;
-  height: max-content;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  width: 101%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 .section__best-places__content__right {
   position: relative;
+  width: max-content;
 }
 .section__best-places__content__right__text {
   position: absolute;
@@ -265,6 +294,7 @@ body {
 }
 .section__best-places__content__left {
   position: relative;
+  width: 658px;
   height: 470px;
   display: grid;
 }
@@ -340,17 +370,19 @@ body {
 .section__latest-trends {
   width: 100%;
   margin-bottom: 100px;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, 680px);
-  grid-template-rows: min-content;
 }
 .section__latest-trends__left {
-  margin-bottom: 15px;
+  margin: 15px;
+  padding-bottom: 15px;
+  width: 682px;
   height: max-content;
   position: relative;
   display: grid;
+  justify-content: center;
   grid-template-columns: 210px 220px 210px;
   align-items: center;
 }
@@ -358,6 +390,7 @@ body {
   z-index: 10;
 }
 .section__latest-trends__right {
+  margin: 15px;
   display: grid;
   justify-content: center;
 }
@@ -399,20 +432,123 @@ body {
   grid-template-rows: min-content;
 }
 .section__partners__content__person {
+  margin: 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .section__partners__content__person__name {
+  margin-left: 15px;
   font-size: 20px;
   font-weight: 700;
 }
+@media (max-width: 1330px) {
+  .section__latest-trends {
+    justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+  .header__title {
+    background-position: center;
+  }
+  .header__title__contant {
+    margin: 0 auto;
+    padding-bottom: 310px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .header__title__contant {
+    font-size: 30px;
+  }
+  .section__destinations__title {
+    margin-top: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+  .section__best-places__title {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .section__latest-trends__left {
+    grid-template-columns: 110px 110px 110px;
+  }
+  .section__latest-trends__left__climber img {
+    width: 130px;
+  }
+  .section__latest-trends__left__red-mountain img {
+    width: 160px;
+    z-index: 10;
+  }
+  .section__latest-trends__left__tourist img {
+    width: 130px;
+  }
+  .section__best-places__content__right img {
+    width: 320px;
+  }
+  .section__best-places__content {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .section__best-places__content__left {
+    margin: 0 auto;
+    width: 320px;
+    height: 200px;
+  }
+  .section__best-places__content__left__sea-img img {
+    width: 100px;
+    height: 140px;
+  }
+  .section__best-places__content__left__wooden-img {
+    left: 110px;
+  }
+  .section__best-places__content__left__wooden-img img {
+    width: 100px;
+  }
+  .section__best-places__content__left__girl-img {
+    left: 220px;
+  }
+  .section__best-places__content__left__girl-img img {
+    height: 75px;
+    width: 100px;
+  }
+  .section__best-places__content__left__bridge-img img {
+    height: 50px;
+    width: 100px;
+  }
+  .section__best-places__content__left__camping-img {
+    width: min-content;
+    height: min-content;
+    left: 110px;
+  }
+  .section__best-places__content__left__camping-img img {
+    width: 100px;
+    height: 89px;
+  }
+  .section__best-places__content__left__rock-img {
+    left: 220px;
+  }
+  .section__best-places__content__left__rock-img img {
+    height: 118px;
+    width: 100px;
+  }
+  .section__best-places__content__left__rock-img__button {
+    height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .header__title__contant {
+    font-size: 20px;
+  }
+}
 .footer {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
-  grid-template-rows: min-content;
+  align-items: flex-start;
+}
+.footer__description {
+  margin: 15px;
 }
 .footer__description__logo {
   margin-bottom: 20px;
@@ -421,6 +557,9 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #808080;
+}
+.footer__useful-links {
+  margin: 15px;
 }
 .footer__useful-links a {
   font-size: 18px;
@@ -431,6 +570,9 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
+.footer__support-links {
+  margin: 15px;
+}
 .footer__support-links a {
   font-size: 18px;
   font-weight: 700;
@@ -439,6 +581,9 @@ body {
 .footer__support-links__title {
   font-size: 24px;
   font-weight: 700;
+}
+.footer__newsletter {
+  margin: 15px;
 }
 .footer__newsletter a {
   font-size: 18px;

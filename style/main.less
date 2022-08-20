@@ -8,6 +8,7 @@ body {
     max-width: 1360px;
 }
 .__container {
+    max-width: 1330px;
     margin: 0px 15px;
 }
 
@@ -19,14 +20,15 @@ body {
 @import "best-places/best-places.less";
 @import "latest-trends/latest-trends.less";
 @import "partners/partners.less";
+@import "media/media.less";
 
 .footer {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
-    grid-template-rows: min-content;
+    align-items: flex-start;
     &__description {
+        margin: 15px;
         &__logo {
             margin-bottom: 20px;
         }
@@ -37,6 +39,7 @@ body {
         }
     }
     &__useful-links {
+        margin: 15px;
         a {
             font-size: 18px;
             font-weight: 700;
@@ -48,6 +51,7 @@ body {
         }
     }
     &__support-links {
+        margin: 15px;
         a {
             font-size: 18px;
             font-weight: 700;
@@ -59,6 +63,7 @@ body {
         }
     }
     &__newsletter {
+        margin: 15px;
         a {
             font-size: 18px;
             font-weight: 700;

@@ -1,28 +1,30 @@
 .section__experiences {
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    grid-template-columns: minmax(auto, 1060px);
-    grid-template-rows: 110px;
     &__title {
         margin: 0 auto;
+        padding: 15px;
         padding-bottom: 52px;
         font-size: 48px;
         font-weight: 900;
     }
     &__main {
         margin-bottom: 74px;
-        display: grid;
-        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        gap: 1em;
-        grid-template-columns: repeat(auto-fit, minmax(253px, max-content));
-        grid-template-rows: min-content;
         &__card {
+            margin: 0 auto;
+            padding: 10px;
             & img {
                 margin-bottom: 17px;
             }
             &__title {
+                width: 254px;
+                min-height: 80px;
                 margin-bottom: 17px;
                 font-size: 18px;
                 font-weight: 900;
