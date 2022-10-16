@@ -149,7 +149,7 @@
   }
   .menu__body.__active {
     position: fixed;
-    height: 100vw;
+    height: 200vw;
     padding-top: 144px;
     transform: translate(0px, 0px);
     transform: translateX(100%);
